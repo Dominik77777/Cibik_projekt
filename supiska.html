@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Popis mojej stránky">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Súpiska</title>
+</head>
+<body>
+    <header>
+        <!--navigácia-->
+        <nav>
+            <div class="logo">
+                <img src="img/logo.webp" alt="Real Madrid">
+            </div>
+            <div class="nadpis">Real Madrid</div>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="index.html">DOMOV</a></li>
+                <li><a href="história.html">HISTÓRIA</a></li>
+                <li><a href="supiska.html">SÚPISKA</a></li>
+                <li><a href="úspechy.html">ÚSPECHY</a></li>
+                <li><a href="kontakt.html">KONTAKT</a></li>
+            </ul>
+            <ul>
+                <li class="hideOnMobile"><a href="index.html">DOMOV</a></li>
+                <li class="hideOnMobile"><a href="história.html">HISTÓRIA</a></li>
+                <li class="hideOnMobile"><a href="supiska.html">SÚPISKA</a></li>
+                <li class="hideOnMobile"><a href="úspechy.html">ÚSPECHY</a></li>
+                <li class="hideOnMobile"><a href="kontakt.html">KONTAKT</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="slides-container">
+        <div class="slide fade">
+          <img src="img/banner1.png">
+        </div>
+        
+        <div class="slide fade">
+          <img src="img/banner2.png">
+        </div>
+
+        <div class="slide fade">
+            <img src="img/banner3.png">
+          </div>
+        
+        <a id="prev" class="prev">❮</a>
+        <a id="next" class="next">❯</a>
+        
+      </section>
+    <!--súpiska hráčov-->
+    <section class="team">
+        <h3>SÚPISKA</h3>
+        <!--brankári-->
+        <div class="center">
+            <p>BRANKÁRI</p>
+        </div>
+        <div class="team-content">
+            <div class="box">
+                <img class="hraci" src="img/COURTOIS.webp" alt="Courtois">
+                <h4>THIBAUT COURTOIS</h4>
+                <h5>#1</h5>
+            </div>
+
+            <div class="box">
+                <img class="hraci" src="img/LUNIN.webp" alt="Lunin">
+                <h4>ANDRIY LUNIN</h4>
+                <h5>#13</h5>
+            </div>
+
+            <div class="box">
+                <img class="hraci" src="img/KEPA.webp" alt="Kepa">
+                <h4>KEPA ARRIZABALAGA</h4>
+                <h5>#25</h5>
+            </div>
+            <!--obrancovia-->
+            <div class="center">
+                <p>OBRANCOVIA</p>
+            </div>
+        
+            <div class="box">
+                <img class="hraci" src="img/ALABA.webp" alt="Alaba">
+                <h4>DAVID ALABA</h4>
+                <h5>#4</h5>
+            </div>
+            <div class="box">
+                <img class="hraci" src="img/CARVAJAL.webp" alt="Carvajal">
+                <h4>DANI CARVAJAL</h4>
+                <h5>#2</h5>
+            </div>
+            <div class="box">
+                <img class="hraci" src="img/MENDY.webp" alt="Mendy">
+                <h4>FERLAND MENDY</h4>
+                <h5>#23</h5>
+            </div>
+            <div class="box">
+                <img class="hraci" src="img/MILITAO.webp" alt="Militao">
+                <h4>ÉDER MILITÃO</h4>
+                <h5>#3</h5>
+            </div>
+            <div class="box">
+                <img class="hraci" src="img/RUDIGER.webp" alt="Rudiger">
+                <h4>ANTONIO RUDIGER</h4>
+                <h5>#22</h5>
+            </div>
+            <div class="box">
+                <img class="hraci" src="img/FRAN.webp" alt="Fran">
+                <h4>FRAN GARCÍA</h4>
+                <h5>#20</h5>
+            </div>
+            <div class="box">
+                <img class="hraci" src="img/LUCAS.webp" alt="Lucas">
+                <h4>LUCAS VÁZQUEZ</h4>
+                <h5>#17</h5>
+            </div>
+            <div class="box">
+                <img class="hraci" src="img/NACHO.webp" alt="Nacho">
+                <h4>NACHO</h4>
+                <h5>#6</h5>
+            </div>
+            <!--stredopoliari-->
+            <div class="center">
+                <p>STREDOPOLIARI</p>
+            </div>
+            <div class="box">
+                <img class="hraci" src="img/BELLINGHAM.webp" alt="Bellingham">
+                <h4>JUDE BELLINGHAM</h4>
+                <h5>#5</h5>
+            </div>
+            <div class="box">
+                <img class="hraci" src="img/MODRIC.webp" alt="Modric">
+                <h4>LUKA MODRIĆ</h4>
+                <h5>#10</h5>
+            </div>
+            <div class="box">
+                <img class="hraci" src="img/KROOS.webp" alt="Kroos">
+                <h4>TONI KROOS</h4>
+                <h5>#8</h5>
+            </div>
+            <div class="box">
+                <img class="hraci" src="img/TCHOUAMENI.webp" alt="Tchouameni">
+                <h4>AURELIEN TCHOUAMENI</h4>
+                <h5>#18</h5>
+            </div>
+            <div class="box">
+                <img class="hraci" src="img/VALVERDE.webp" alt="Valverde">
+                <h4>FEDE VALVERDE</h4>
+                <h5>#15</h5>
+            </div>
+            <div class="box">
+                <img class="hraci" src="img/ARDA.webp" alt="Arda Guler">
+                <h4>ARDA GULER</h4>
+                <h5>#24</h5>
+            </div>
+            <div class="box">
+                <img class="hraci" src="img/CAMAVINGA.webp" alt="Camavinga">
+                <h4>EDUARDO CAMAVINGA</h4>
+                <h5>#12</h5>
+            </div>
+            <div class="box">
+                <img class="hraci" src="img/CEBALLOS.webp" alt="Ceballos">
+                <h4>DANI CEBALLOS</h4>
+                <h5>#19</h5>
+            </div>
+            <!--útočníci-->
+            <div class="center">
+                    <p>ÚTOČNÍCI</p>
+            </div>
+            <div class="box">
+                <img class="hraci" src="img/VINI.webp" alt="Vini Jr">
+                <h4>VINICIUS JUNIOR</h4>
+                <h5>#7</h5>
+            </div>
+            <div class="box">
+                <img class="hraci" src="img/RODRYGO.webp" alt="Rodrygo">
+                <h4>RODRYGO GOES</h4>
+                <h5>#11</h5>
+            </div>
+            <div class="box">
+                <img class="hraci" src="img/JOSELU.webp" alt="Joselu">
+                <h4>JOSELU</h4>
+                <h5>#14</h5>
+            </div>
+            <div class="box">
+                <img class="hraci" src="img/BRAHIM.webp" alt="Brahim Dzaz">
+                <h4>BRAHIM DIAZ</h4>
+                <h5>#21</h5>
+            </div>
+
+            <div class="center">
+                <p>TRÉNER</p>
+            </div>
+            <div class="trener1">
+                <img class="trener" src="img/ancelotti.webp" alt="Ancelotti">
+                <h4>CARLO ANCELOTTI</h4>
+                <h5>Hlavný tréner</h5>
+            </div>
+        </div>
+    </section>
+    <!--footer-->
+    <footer>
+        <div class="container">
+            <!--Odkaz na mail a telefón-->
+            <div class="footer-content">
+                <h3>Kontaktujte nás</h3>
+                <p><i class="fa fa-envelope" aria-hidden="true"><a href="mailto:real.madrid@gmail.com"> real.madrid@gmail.com</a></i></p>                
+                <p><i class="fa fa-phone" aria-hidden="true"><a href="tel:0909500600"> 0909500600</a></i></p>
+            </div>
+            <!--Dolné Menu-->
+            <div class="footer-content">
+                <h3>Menu</h3>
+                <ul class="menu">
+                    <li><a href="index.html">DOMOV</a></li>
+                    <li><a href="história.html">HISTÓRIA</a></li>
+                    <li><a href="supiska.html">SÚPISKA</a></li>
+                    <li><a href="úspechy.html">ÚSPECHY</a></li>
+                    <li><a href="kontakt.html">KONTAKT</a></li>
+                </ul>
+            </div>
+            <!--odkazy na sociálne siete-->
+            <div class="footer-content">
+                <h3>Sledujte nás</h3>
+                <ul class="social-icons">
+                    <li><a href="https://www.facebook.com/RealMadrid/?locale=sk_SK"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/realmadrid/"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://twitter.com/realmadrid?lang=sk"><i class="fab fa-twitter"></i></a></li>  
+                </ul> 
+            </div> 
+        </div>
+        <div class="bottom-bar">
+            <p>&copy; 2023 Real Madrid . Všetky práva vyhradené</p>
+        </div>
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+</html>
