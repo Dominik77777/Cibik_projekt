@@ -6,7 +6,7 @@ function showSidebar(){
 function hideSidebar(){
     const sidebar = document.querySelector('.sidebar')
     sidebar.style.display = 'none'
-} 
+}
 var acc = document.getElementsByClassName("akordeon");
 var i;
 
@@ -32,7 +32,7 @@ function validateForm() {
       alert('Prosím zadajte platnú emailovú adresu.');
       return;
   }
-  window.location.href = 'thankyoupage.html';
+  window.location.href = 'thankyoupage.php';
 }
 
 function setCookie(cname,cvalue,exdays) {
