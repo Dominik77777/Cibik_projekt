@@ -1,4 +1,4 @@
-/*Akordeón*/
+/*hamburger menu*/
 function showSidebar(){
     const sidebar = document.querySelector('.sidebar')
     sidebar.style.display = 'flex'
@@ -7,6 +7,7 @@ function hideSidebar(){
     const sidebar = document.querySelector('.sidebar')
     sidebar.style.display = 'none'
 }
+/*Akordeon */
 var acc = document.getElementsByClassName("akordeon");
 var i;
 
@@ -23,16 +24,16 @@ for (i = 0; i < acc.length; i++) {
 }
 /*Formular validacia, alert, redirect*/
 function validateForm() {
-  var emailInput = document.getElementById('email');
-  var emailValue = emailInput.value.trim();
+    var emailInput = document.getElementById('email');
+    var emailValue = emailInput.value.trim();
 
-  var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-  if (!emailRegex.test(emailValue)) {
-      alert('Prosím zadajte platnú emailovú adresu.');
-      return;
-  }
-  window.location.href = 'thankyoupage.php';
+    if (!emailRegex.test(emailValue)) {
+        alert('Prosím zadajte platnú emailovú adresu.');
+        return;
+    }
+    window.location.href = 'thankyoupage.php';
 }
 
 function setCookie(cname,cvalue,exdays) {

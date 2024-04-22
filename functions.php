@@ -17,23 +17,23 @@ function getMenuData(string $type): array {
         if ($type === "header") {
             $menu = [
                 'domov' => [
-                    'name' => 'Domov',
+                    'name' => 'DOMOV',
                     'path' => 'index.php',
                 ],
                 'história' => [
-                    'name' => 'História',
+                    'name' => 'HISTÓRIA',
                     'path' => 'história.php',
                 ],
                 'supiska' => [
-                    'name' => 'Súpiska',
+                    'name' => 'SÚPISKA',
                     'path' => 'supiska.php',
                 ],
                 'úspechy' => [
-                    'name' => 'Úspechy',
+                    'name' => 'ÚSPECHY',
                     'path' => 'úspechy.php',
                 ],
                 'kontakt' => [
-                    'name' => 'Kontakt',
+                    'name' => 'KONTAKT',
                     'path' => 'kontakt.php',
                 ],
             ];
@@ -47,4 +47,5 @@ function printMenu(array $menu){
         echo '<li><a href="' . $menuData['path'].'">'.$menuData['name'].'</a></li>';
     }
 }
+
 
