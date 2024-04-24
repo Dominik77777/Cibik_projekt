@@ -21,7 +21,7 @@
     <!--formulár-->
     <div class="formular">
         <h3>KONTAKTUJTE NÁS</h3>
-        <form id="myForm" method="post" action="db/spracovanieFormulara.php" onsubmit="validateForm(); return false;">
+        <form id="myForm" method="post" action="db/spracovanieFormulara.php">
             <input type="text" placeholder="Vaše meno" name="meno" id="meno" required><br>
             <input type="email" placeholder="Váš email" name="email" id="email" required><br>
             <label for="spracovanie-suhlas">Súhlas so spracovaním osobných údajov:</label>
