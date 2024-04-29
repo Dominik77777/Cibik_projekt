@@ -53,17 +53,17 @@
         <div class="panel">
             <h3>História znaku Realu Madrid nie je príliš zložitá a tím robil v počiatočných fázach histórie klubu iba malé zmeny. Prvá väčšia zmena prišla až v roku 1941, dva roky po občianskej vojne a odvtedy sa logo menilo už iba raz.</h3>
             <p>Prvý znak uzrel svetlo sveta v roku 1902 a vidieť v ňom môžeme písmená MCF, ktoré sú prekladané na bielom pozadí.</p>
-            <img class="logo1" src="img/1.znak.jpg" alt="1.znak">
+            <img class="logo1" src="img/znaky/1.znak.jpg" alt="1.znak">
             <p>O šesť rokov neskôr sa madridský klub rozhodol spraviť menšie úpravy. Pribudol kruh ohraničujúci prekladanie písmen, ktoré so zmenou fontu tak isto prešlo menšou úpravou. Farby však ostali rovnaké.</p>
-            <img class="logo1" src="img/2.znak.jpg" alt="2.znak">
+            <img class="logo1" src="img/znaky/2.znak.jpg" alt="2.znak">
             <p>Historicky dôležitá zmena prišla v roku 1920 s príchodom nového prezidenta Pedra Paragesa. V tomto roku totiž klub z hlavného mesta Španielska získal výsadu “kráľovský”, ktorú mu udelil kráľ Alfonso XIII. V klube sa túto udalosť rozhodli osláviť pridaním kráľovskej koruny do znaku a začalo sa hovoriť o “Reale Madrid” (kráľovskom).</p>
-            <img class="logo1" src="img/3.znak.jpg" alt="3.znak">
+            <img class="logo1" src="img/znaky/3.znak.jpg" alt="3.znak">
             <p>Po páde monarchie a nastolení tzv. Druhej španielskej republiky bola koruna odstránená a titul “Real” bol klubu odobratý. Náhradou za korunu mal byť tmavý pruh v pozadí loga.</p>
-            <img class="logo1" src="img/4.znak.jpg" alt="4.znak">
+            <img class="logo1" src="img/znaky/4.znak.jpg" alt="4.znak">
             <p>Dva roky po skončení občianskej vojny (rok 1941), Real Madrid v logu obnovil kráľovskú korunu, ale pruh v pozadí zachoval. Znak taktiež dostal nové farby, pričom dominuje “kráľovsky” zlatá.</p>
-            <img class="logo1" src="img/5.znak.jpg" alt="5.znak">
+            <img class="logo1" src="img/znaky/5.znak.jpg" alt="5.znak">
             <p>Posledné zmeny, ktoré sa od roku 1941 vykonali boli veľmi malé. V roku 2001 dostal pruh v pozadí sýtejšie modrú farbu a nový sklon. Celkový vzhľad loga sa tak isto mierne zmenil, ale to len kvôli tomu, aby lepšie vystihoval moderné 21. storočie.</p>
-            <img class="logo1" src="img/6.znak.jpg" alt="6.znak">
+            <img class="logo1" src="img/znaky/6.znak.jpg" alt="6.znak">
         </div>
 
         <button class="akordeon">Liga Majstrov</button>
@@ -104,7 +104,7 @@
                 <h3>Najvýznamnejší hráči, ktorý obliekli dres Realu Madrid</h3>
                 <div class="hracistats">
                     <h2>Cristiano Ronaldo</h2>
-                    <img class="hraci2" src="img/ronaldo.jpg" alt="Ronaldo" width="300">
+                    <img class="hraci2" src="img/hraci/ronaldo.jpg" alt="Ronaldo" width="300">
                     <p>Odohrané zápasy: 438</p>
                     <p>Počet gólov: 450</p>
                     <p>Počet asistencií: 120</p>
@@ -113,7 +113,7 @@
                 </div>
                 <div class="hracistats">
                     <h2>Zinedine Zidane</h2>
-                    <img class="hraci2" src="img/zidane.jpg" alt="Zidane" width="300">
+                    <img class="hraci2" src="img/hraci/zidane.jpg" alt="Zidane" width="300">
                     <p>Odohrané zápasy: 224</p>
                     <p>Počet gólov: 49</p>
                     <p>Počet asistencií: 68</p>
@@ -121,7 +121,7 @@
                 </div>
                 <div class="hracistats">
                 <h2>Alfredo Di Stéfano</h2>
-                    <img class="hraci2" src="img/distefano.jpg" alt="Di Stefano" width="300">
+                    <img class="hraci2" src="img/hraci/distefano.jpg" alt="Di Stefano" width="300">
                     <p>Odohrané zápasy: 356</p>
                     <p>Počet gólov: 271</p>
                     <p>Zlatá lopta: 2</p>
@@ -129,14 +129,14 @@
                 </div>
                 <div class="hracistats">
                     <h2>Ferenc Puskás</h2>
-                    <img class="hraci2" src="img/puskas.jpg" alt="Puskas" width="300">
+                    <img class="hraci2" src="img/hraci/puskas.jpg" alt="Puskas" width="300">
                     <p>Odohrané zápasy: 231</p>
                     <p>Počet gólov: 202</p>
                     <p>Tituly: 8</p>
                 </div>
                 <div class="hracistats">
                     <h2>Sergio Ramos</h2>
-                    <img class="hraci2" src="img/ramos.jpg" alt="Ramos" width="300">
+                    <img class="hraci2" src="img/hraci/ramos.jpg" alt="Ramos" width="300">
                     <p>Odohrané zápasy: 671</p>
                     <p>Počet gólov: 101</p>
                     <p>Počet asistencií: 40</p>
@@ -144,7 +144,7 @@
                 </div>
                 <div class="hracistats">
                     <h2>Raúl González Blanco</h2>
-                    <img class="hraci2" src="img/raul.jpg" alt="Raul" width="300">
+                    <img class="hraci2" src="img/hraci/raul.jpg" alt="Raul" width="300">
                     <p>Odohrané zápasy: 741</p>
                     <p>Počet gólov: 323</p>
                     <p>Počet asistencií: 114</p>
@@ -158,16 +158,16 @@
         <!--história štadiónu-->
         <div class="panel">
             <h3>Estádio Santiago Bernabéu je štadión Realu Madrid, ktorý tu hráva svoje domáce zápasy. Bol otvorený 14 decembra 1947. Pomenovaný bol podľa legendy klubu Santiaga Bernabeua. Tento štadón patrí medzi najlepšie na svete a má kapacitu približne 80 400 ľudí.</h3>
-            <img class="stadium" src="img/stadion1.webp" alt="Prvy stadion" width="600">
+            <img class="stadium" src="img/stadion/stadion1.webp" alt="Prvy stadion" width="600">
             <p>Štadión bol otvorený 14. decembra 1947. Predtým Real Madrid hrával na rôznych iných miestach, ale kvôli rastúcej popularite klubu a potrebe väčšieho priestoru sa rozhodlo postaviť nový štadión.</p>
-            <img class="stadium" src="img/1947.jpg" alt=" stadion 1947" width="600">
+            <img class="stadium" src="img/stadion/1947.jpg" alt=" stadion 1947" width="600">
             <p>Štadión nesie meno Santiago Bernabéu, ktorý bol prezidentom Realu Madrid v rokoch 1943-1978. Bernabéu zohral kľúčovú úlohu pri rozvoji klubu a pri výstavbe nového štadiónu.</p>
             <p>Štadión prešiel mnohými modernizáciami a rozšíreniami v priebehu rokov. Jedným z najdôležitejších bolo to, ktoré sa uskutočnilo pred Majstrovstvami sveta v roku 1982, keď boli nainštalované nové tribúny a zvýšila sa kapacita štadióna.</p>
-            <img class="stadium" src="img/1982.jpg" alt=" stadion 1982" width="600">
+            <img class="stadium" src="img/stadion/1982.jpg" alt=" stadion 1982" width="600">
             <p>Štadión Santiago Bernabéu je považovaný za jedno z majstrovských diel športovej architektúry. Jeho charakteristickým rysom je obrovská strecha, ktorá chráni divákov pred poveternostnými podmienkami.Na území štadióna sa nachádza aj múzeum venované histórii Realu Madrid. Môžete tu vidieť suveníry, trofeje a dozvedieť sa viac o histórii klubu.</p>
-            <img class="stadium" src="img/muzeum.avif" alt="muzeum" width="600">
+            <img class="stadium" src="img/stadion/muzeum.avif" alt="muzeum" width="600">
             <p>V posledných rokoch klub oznámil plány významnej renovácie a rozšírenia štadióna, aby ho prispôsobil moderným štandardom. Plány zahŕňajú zvýšenie kapacity, inštaláciu posúvateľnej strechy a vylepšenie infraštruktúry.</p>
-            <img class="stadium" src="img/new.jpg" alt="novy stadion" width="600">
+            <img class="stadium" src="img/stadion/new.jpg" alt="novy stadion" width="600">
             <p>Štadión Santiago Bernabéu zostáva jedným z najdôležitejších symbolov Realu Madrid a miestom, kde fanúšikovia môžu prežívať emócie spojené s futbalom a tešiť sa z bohatej histórie klubu.</p>
         </div>
     </div>

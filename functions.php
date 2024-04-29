@@ -47,5 +47,23 @@ function printMenu(array $menu){
         echo '<li><a href="' . $menuData['path'].'">'.$menuData['name'].'</a></li>';
     }
 }
+function generateSlides($dir)
+{
+    $files = glob($dir . "/*.jpg");
+    $json = file_get_contents("data/datas.json");
+    $data = json_decode($json, true);
+    $text = $data["text_banner"];
 
+    foreach ($files as $file) {
+        echo '<div class="slide fade">';
+        echo '<img src="' . $file . '">';
+        echo '<div class="slide-text">';
+
+        echo($text[basename($file)]); //basename zistí názov
+        echo '</div>';
+        echo '</div>';
+    }
+    echo '<a id="prev" class="prev">❮</a>';
+    echo '<a id="next" class="next">❯</a>';
+}
 
