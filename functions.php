@@ -49,7 +49,7 @@ function printMenu(array $menu){
 }
 function generateSlides($dir)
 {
-    $files = glob($dir . "/*.jpg");
+    $files = glob($dir . "/*.png");
     $json = file_get_contents("data/datas.json");
     $data = json_decode($json, true);
     $text = $data["text_banner"];

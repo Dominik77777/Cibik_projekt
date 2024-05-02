@@ -1,7 +1,9 @@
 {
   "text_banner": {
-    "banner1.jpg": "Súpiska",
-    "banner2.jpg": "Súpiska",
-    "banner3.jpg": "Súpiska"
-  }
+    "banner1.png": "",
+    "banner2.png": "",
+    "banner3.png": ""
+  },
+  "otazka": [],
+  "odpoved": []
 }

@@ -31,6 +31,18 @@
         </form>
     </div>
 
+    <section class="qna">
+        <h3>Q&A</h3>
+    </section>
+    <section class="otazkyodpovede">
+        <?php
+        include_once "classes/QnA.php";
+        use otazkyodpovede\QnA;
+
+        $qna = new QnA();
+        $qna->getQna();
+        ?>
+    </section>
     <footer>
         <?php
         $file_path = "parts/footer.php";
