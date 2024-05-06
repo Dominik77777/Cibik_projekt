@@ -47,8 +47,7 @@ function printMenu(array $menu){
         echo '<li><a href="' . $menuData['path'].'">'.$menuData['name'].'</a></li>';
     }
 }
-function generateSlides($dir)
-{
+function generateSlides($dir){
     $files = glob($dir . "/*.png");
     $json = file_get_contents("data/datas.json");
     $data = json_decode($json, true);

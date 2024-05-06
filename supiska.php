@@ -22,8 +22,7 @@
         <?php
         generateSlides("img/banners");
         ?>
-        
-      </section>
+    </section>
     <!--súpiska hráčov-->
     <section class="team">
         <h3>SÚPISKA</h3>
