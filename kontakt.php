@@ -37,7 +37,7 @@
     <section class="otazkyodpovede">
         <?php
         include_once "classes/QnA.php";
-        use otazkyodpovede\QnA;
+        use formular\QnA;
 
         $qna = new QnA();
         $qna->getQna();

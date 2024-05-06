@@ -1,68 +1,23 @@
 <?php
-namespace otazkyodpovede;
-
+namespace formular;
+error_reporting(E_ALL); //zapnutie chybových hlásení
+ini_set("display_errors","On");
 define('__ROOT__', dirname(dirname(__FILE__)));
-require_once(__ROOT__.'/db/config.php');
+require_once(__ROOT__.'/classes/Database.php');
+use formular\Database;
 use PDO;
-class QnA
-{
-    private $conn;
-
-    public function __construct()
-    {
+use Exception;
+class QnA extends Database{
+    protected $connection;
+    public function __construct() {
         $this->connect();
-    }
-
-    private function connect()
-    {
-        $config = DATABASE;
-
-        $options = array(
-            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-            PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-        );
-        try {
-            $this->conn = new PDO('mysql:host=' . $config['HOST'] . ';dbname=' .
-                $config['DBNAME'] . ';port=' . $config['PORT'], $config['USER_NAME'],
-                $config['PASSWORD'], $options);
-        } catch (PDOException $e) {
-            die("Chyba pripojenia: " . $e->getMessage());
-        }
-    }
-    public function insertQnA(){
-        try {
-            // Načítanie JSON súboru
-            $data = json_decode(file_get_contents
-            (__ROOT__.'/data/datas.json'), true);
-            $otazka = $data["otazka"];
-            $odpoved = $data["odpoved"];
-
-            // Vloženie otázok a odpovedí v rámci transakcie
-            $this->conn->beginTransaction();
-
-            $sql = "INSERT INTO qna (otazka, odpoved) VALUES (:otazka, :odpoved)";
-            $statement = $this->conn->prepare($sql);
-
-            for ($i = 0; $i < count($otazka); $i++) {
-                $statement->bindParam(':otazka', $otazka[$i]);
-                $statement->bindParam(':odpoved', $odpoved[$i]);
-                $statement->execute();
-            }
-            $this->conn->commit();
-            echo "Dáta boli vložené";
-        } catch (Exception $e) {
-            // Zobrazenie chybového hlásenia
-            echo "Chyba pri vkladaní dát do databázy: " . $e->getMessage();
-            $this->conn->rollback(); // Vrátenie späť zmien v prípade chyby
-        } finally {
-            // Uzatvorenie spojenia
-            $this->conn = null;
-        }
+        //Použitie gettera na získanie spojenia
+        $this->connection = $this->getConnection();
     }
     public function getQnA(){
         try {
             // vykonanie SQL dotazu na výber otázok a odpovedí
-            $query = $this->conn->query("SELECT * FROM qna");
+            $query = $this->connection->query("SELECT * FROM qna");
             $qna = $query->fetchAll(PDO::FETCH_ASSOC);
 
             // zobrazenie otázok a odpovedí
@@ -71,8 +26,39 @@ class QnA
                 echo "<p><strong>Odpoveď:</strong> {$item['odpoved']}</p>";
             }
         } catch (\Exception $e) {
+
             // Zobrazenie správy v prípade chyby
             echo "Chyba pri načítavaní otázok a odpovedí: " . $e->getMessage();
+        }
+    }
+    public function insertQnA(){
+        try {
+            // Načítanie JSON súboru
+            $data = json_decode(file_get_contents
+            (__ROOT__.'/data/datas.json'), true);
+            $otazky = $data["otazky"];
+            $odpovede = $data["odpovede"];
+
+            // Vloženie otázok a odpovedí v rámci transakcie
+            $this->connection->beginTransaction();
+
+            $sql = "INSERT IGNORE INTO qna (otazka, odpoved) VALUES (:otazka, :odpoved)";
+            $statement = $this->connection->prepare($sql);
+
+            for ($i = 0; $i < count($otazky); $i++) {
+                $statement->bindParam(':otazka', $otazky[$i]);
+                $statement->bindParam(':odpoved', $odpovede[$i]);
+                $statement->execute();
+            }
+            $this->connection->commit();
+            echo "Dáta boli vložené";
+        } catch (Exception $e) {
+            // Zobrazenie chybového hlásenia
+            echo "Chyba pri vkladaní dát do databázy: " . $e->getMessage();
+            $this->connection->rollback(); // Vrátenie späť zmien v prípade chyby
+        } finally {
+            // Uzatvorenie spojenia
+            $this->connection = null;
         }
     }
 }
