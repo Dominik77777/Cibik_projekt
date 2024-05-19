@@ -1,6 +1,5 @@
 <?php
-function validateMenuType(string $type): bool
-{
+function validateMenuType(string $type): bool{
     $menuTypes = [
         'header',
         'footer'
@@ -16,7 +15,7 @@ function getMenuData(string $type): array {
     if (validateMenuType($type)) {
         if ($type === "header") {
             $menu = [
-                'domov' => [
+                'home' => [
                     'name' => 'DOMOV',
                     'path' => 'index.php',
                 ],
@@ -35,7 +34,7 @@ function getMenuData(string $type): array {
                 'kontakt' => [
                     'name' => 'KONTAKT',
                     'path' => 'kontakt.php',
-                ],
+                ]
             ];
         }
     }

@@ -12,7 +12,7 @@ class Kontakt extends Database {
         $this->connection = $this->getConnection();
     }
     public function ulozitSpravu($meno, $email, $sprava) {
-        $sql = "INSERT INTO kontakt_formular (meno, email, sprava) 
+        $sql = "INSERT INTO udaje (meno, email, sprava) 
                 VALUES (:meno, :email, :sprava)";
         $statement = $this->connection->prepare($sql);
         try {

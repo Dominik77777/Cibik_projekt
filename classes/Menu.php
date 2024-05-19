@@ -1,4 +1,6 @@
 <?php
+error_reporting(E_ALL);
+ini_set("display_errors","On");
 class Menu{
     private array $validateMenuTypes = ["header", "footer"];
 
@@ -12,11 +14,11 @@ class Menu{
         }
         $menuData = [
             "header" => [
-                    'domov' => [
+                    'home' => [
                         'name' => 'DOMOV',
                         'path' => 'index.php',
                     ],
-                    'história' => [
+                    'historia' => [
                         'name' => 'HISTÓRIA',
                         'path' => 'história.php',
                     ],
@@ -24,7 +26,7 @@ class Menu{
                         'name' => 'SÚPISKA',
                         'path' => 'supiska.php',
                     ],
-                    'úspechy' => [
+                    'uspechy' => [
                         'name' => 'ÚSPECHY',
                         'path' => 'úspechy.php',
                     ],
@@ -40,6 +42,14 @@ class Menu{
     function printMenu(array $menu): void {
         foreach ($menu as $menuName => $menuItem) {
             echo '<li><a href="' . $menuItem['path'] . '">' . $menuItem['name'] . '</a></li>';
+        }
+    }
+    public function printLoginRegister(): void{
+        session_start();
+        if (isset($_SESSION['login'])) {
+            echo '<li> <a href= db/logout.php >PRIHLÁSENÝ:' . $_SESSION['login'] . ' (' . $_SESSION['rola'] . ')'.'</a> </li> ';
+        } else {
+            echo '<li> <a href="/Projekt_SJ_RM/signin.php">PRIHLÁSIŤ REGISTROVAŤ</a> </li>';
         }
     }
 }
