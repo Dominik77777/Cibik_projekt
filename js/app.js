@@ -1,3 +1,18 @@
+/*Akordeon */
+var acc = document.getElementsByClassName("akordeon");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}
 /*slider a bannery*/
 var idx = 1;
 
@@ -28,27 +43,3 @@ var next  = document.getElementById("next");
 next.addEventListener("click", function(){
     nextSlide(1)
 });
-/*hamburger menu*/
-function showSidebar(){
-    const sidebar = document.querySelector('.sidebar')
-    sidebar.style.display = 'flex'
-}
-function hideSidebar(){
-    const sidebar = document.querySelector('.sidebar')
-    sidebar.style.display = 'none'
-}
-/*Akordeon */
-var acc = document.getElementsByClassName("akordeon");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-}

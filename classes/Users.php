@@ -69,7 +69,6 @@ class Users extends Database{
     }
     public function isAdmin()
     {
-        session_start();
         if (isset($_SESSION['rola']) && $_SESSION['user_id']) {
             if ($_SESSION['rola'] == 'admin') {
                 echo "admin je tu";
